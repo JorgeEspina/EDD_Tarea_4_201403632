@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1536788520 source:/home/jorgeespina/Desktop/Tarea 3/EDD_Tarea_4_201403632/ArbolABB/main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+
