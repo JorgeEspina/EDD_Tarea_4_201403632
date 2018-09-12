@@ -47,7 +47,10 @@ int main (){
                       InsertarArbolABB (&abb, Numero);
                     break;
                   case 2:
+                        printf("Recorrido EnOrden \n");
                         MostrarArbol (abb);
+                        printf("\nRescorrido PostOrden \n");
+                        MostrarArbolpostorden(abb);
                     break;
 
                                 }
@@ -81,9 +84,15 @@ void MostrarArbol(ArbolABB raiz){
         MostrarArbol (raiz->Izq);
         printf ("%d, ", raiz->Id);
         MostrarArbol (raiz->Der);
-        }
+    }
 }
-
+void MostrarArbolpostorden(ArbolABB raiz){
+    if (raiz != NULL){
+        MostrarArbol (raiz->Izq);
+        MostrarArbol (raiz->Der);
+        printf ("%d, ", raiz->Id);
+    }
+}
 
 
 
